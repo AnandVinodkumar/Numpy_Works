@@ -1,0 +1,78 @@
+Probability  >>>   Chance of occurrence of an event
+
+Three Types
+===============================
+1) Marginal Probability   >>>   Refers to the chance of occurrence of a single event A
+2) Joint Probability      >>>   Refers to the chance of occurrence of two events A and B together
+3) Conditional Probability>>>   Refers to the chance of occurrence of an event A given that another event B has already occurred
+
+_________________________________
+Weather     Temperature     Play |
+Sunny           Hot          No  
+Sunny           Mild         No
+Overcast        Cool         Yes
+Rainy           Mild         Yes
+Rainy           Cool         Yes          
+
+
+Weather = Sunny, Temperature = Cool
+        Play = ?
+
+
+        Prior Probability
+_________________________________
+Find Prior Probability P(Play=Yes) = 3/5
+Find Prior Probability P(Play=No)  = 2/5
+
+        Likelihood
+_________________________________
+P(Weather=Sunny | Play=Yes) = 0/3
+P(Temperature=Cool | Play=Yes) = 2/3
+P(Weather=Sunny | Play=No) = 2/2
+P(Temperature=Cool | Play=No) = 0/2
+
+        Posterior Probability
+_________________________________
+P(Play=Yes | Weather=Sunny, Temperature=Cool) 
+    = P(Weather=Sunny | Play=Yes) * P(Temperature=Cool | Play=Yes) * P(Play=Yes)
+    = 0 * (2/3) * (3/5) = 0
+P(Play=No | Weather=Sunny, Temperature=Cool) 
+    = P(Weather=Sunny | Play=No) * P(Temperature=Cool | Play=No) * P(Play=No)
+    = (2/2) * 0 * (2/5) = 0
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+P(spam) = 3/5
+P(Not spam) = 2/5
+
+_________________________________
+
+P(Offer = yes|spam = spam) = 1
+P(Free = yes|spam = spam) = 1/3
+P(Click = yes|spam = spam) = 2/3
+P(Offer = yes|spam = Not spam) = 0
+P(Free = yes|spam = Not spam) = 1/2
+P(Click = yes|spam = Not spam) = 0
+P(Offer = no|spam = spam) = 0
+P(Free = no|spam = spam) = 2/3
+P(Click = no|spam = spam) = 1/3
+P(Offer = no|spam = Not spam) = 1
+P(Free = no|spam = Not spam) = 1/2
+P(Click = no|spam = Not spam) = 1
+_____________________________________
+
+P(Spam = spam | offer = yes | free = yes | click = no)
+    = P(Spam = spam | offer = yes) * P(Spam = spam | free = yes) * P(Spam = spam | click = no) * P(Spam = spam)
+    = 1 * 1/3 * 1/3 * 3/5 = 3/45 = 1/15
+
+P(Spam = not spam | offer = yes | free = yes | click = no)
+    = P(Spam = not spam | offer = yes) * P(Spam = not spam | free = yes) * P(Spam = not spam | click = no) * P(Spam = not spam)
+    = 0 * 1/2 * 1 * 2/5 = 0
+
+
+
+
+
