@@ -12,8 +12,12 @@ Many trees reduces mistake
 aviod overfitting
 works well even if data is noisy
 
+Row allocation
+============================
+feature sampling
 
-
+Column allocation
+============================
 gini = 1 - sum((p_i)^2)
 
 
