@@ -41,4 +41,14 @@ n-gram method >> takes n words from a sentence as a token
 # boy
 this is 1-gram method
 
+
+# Vectorization
+
+Term Frequency(text) = Total no. of [word] in text
+                        -----------------------------
+                        Total words in text
+
+IDF (Inverse Document Frequency) = N / df(word)
+        N -> No of sentences  df(word) -> total frequency of (word) in both sentences
+
 """
